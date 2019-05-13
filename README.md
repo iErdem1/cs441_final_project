@@ -30,7 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```bash
     $ sudo add-apt-repository ppa:kivy-team/kivy
     $ sudo apt-get update
-    $ sudo apt-get install python3-kivy
 ```
  
 
@@ -39,3 +38,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Probably I am going to create a mobile game. Maybe I can build up something that works on server.(Not sure to be able to:))
 - Further warning and sorry about the joke on images section But I do not have any screens or something:) 
 - Every detail I mentionedd above can be change. 
+- To be updated.
