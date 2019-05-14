@@ -1,2 +1,13 @@
 #Log Files
 *.log
+
+#PyCharm Files
+.idea/
+
+#Static Files
+img/
+
+#VirtualEnv
+.venv
+venv/
+ENV/
