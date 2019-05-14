@@ -5,8 +5,18 @@
             pos: self.pos
             size: self.size
 
+<Paddle>:
+    size: 25, 200
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
 <Game>:
     ball: ball
+    p1: player_left
+    p2: player_right
+
     canvas:
         Rectangle:
             pos: self.center_x - 5, 0
@@ -16,14 +26,24 @@
         font_size: 50
         center_x: root.width / 4
         top: root.top - 50
-        text: "0"
+        text: str(root.p1.score)
 
     Label:
         font_size: 50
         center_x: root.width * 3 / 4
         top: root.top - 50
-        text: "0"
+        text: str(root.p1.score)
 
     Ball:
         id: ball
         center: self.parent.center
+
+    Paddle:
+        id: player_left
+        x: root.x
+        center_y: root.center_y
+
+    Paddle:
+        id: player_right
+        x: root.x
+        center_y: root.center_y
