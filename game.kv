@@ -6,6 +6,7 @@
             size: self.size
 
 <Game>:
+    ball: ball
     canvas:
         Rectangle:
             pos: self.center_x - 5, 0
@@ -24,4 +25,5 @@
         text: "0"
 
     Ball:
+        id: ball
         center: self.parent.center
