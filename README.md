@@ -30,12 +30,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```bash
     $ sudo add-apt-repository ppa:kivy-team/kivy
     $ sudo apt-get update
+    $ sudo apt-install python3-kivy
 ```
+- On project directory create a <code>img</code> subdirectory and add some images.
+- To run the program you may use <code>python3 main.py</code> command on terminal.
  
 
 ## Project Description
-- For final project I have not decided yet. I am planning to work on Python related game platform (probably Kivy) and Build that up for Android environment.
-- Probably I am going to create a mobile game. Maybe I can build up something that works on server.(Not sure to be able to:))
-- Further warning and sorry about the joke on images section But I do not have any screens or something:) 
-- Every detail I mentionedd above can be change. 
-- To be updated.
+- Project based on Kivy Framework which is Python's cross platform application 
+builder.
+- Kivy is basically a cross platform graphical interface library of Python.
+You can develop desktop applications and also you can build your app to Android and
+iOS via Buildozer. Kivy use pygame as an engine. Also, render window tools via SDL and OpenGL
+so Kivy apps do not look like native iOS and Android applications.
+- Kivy is a Free Software and licenced under MIT. So if you want to check source code you can
+go <https://github.com/kivy/kivy>
+- Project is basic tennis like game.
+- Ball (My friends head in this case:)) has to reach opponents side
+on the board.
+- We can control size of the board and other features via our kivy
+files.
+- Collisions controlled by kivy's own packages and libraries.
+- We use Clock feature to control movement.
+
+- Game is getting harder in every hit, velocity of the ball is
+increasing.(I am planning to update this, increase rate is too much)
+- Before demo I am also planning to fix known bugs.

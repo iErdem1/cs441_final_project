@@ -33,7 +33,7 @@ class Game(Widget):
     p1 = ObjectProperty(None)
     p2 = ObjectProperty(None)
 
-    def serve_ball(self, velo=(4,0)):
+    def serve_ball(self, velo=(4, 0)):
         self.ball.center = self.center
         self.ball.velocity = velo
 
@@ -46,8 +46,8 @@ class Game(Widget):
         if(self.ball.y < 0) or (self.ball.top > self.height):
             self.ball.y_axix_velocity *= -1
 
-        # if (self.ball.x < 0) or (self.ball.right > self.width):
-        #     self.ball.x_axis_velocity *= -1
+        if (self.ball.x < 0) or (self.ball.right > self.width):
+            self.ball.x_axis_velocity *= -1
 
         if self.ball.x < self.x:
             self.p2.score += 1
